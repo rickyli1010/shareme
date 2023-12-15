@@ -19,7 +19,7 @@ const Login = () => {
       image: picture
     };
 
-    localStorage.setItem('user', user);
+    localStorage.setItem('user', JSON.stringify(user));
 
     client.createIfNotExists(user).then(() => {
       navigate('/', { replace: true });
