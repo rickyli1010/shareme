@@ -31,7 +31,7 @@ const Feed = () => {
   }, [categoryId]);
 
   if (loading)
-    return <Spinner message='We are adding new ideas to your feed!' />;
+    return <Spinner message="We are adding new ideas to your feed!" />;
 
   return <div>{pins && <MasonryLayout pins={pins} />}</div>;
 };
