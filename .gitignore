@@ -4,6 +4,7 @@
 
 
 /shareme_frontend/.env
+**/build
 
 ### Node ###
 # Logs
