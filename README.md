@@ -27,7 +27,7 @@ This is a Social Media application built with React, Tailwind & Sanity
 <br />
 <div align="center">
   <a href="https://github.com/rickyli1010/shareme">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="shareme_frontend/src/assets/logo.png" alt="Logo" width="304" height="63">
   </a>
 
 <h3 align="center">ShareMe Social Media Application</h3>
@@ -79,9 +79,9 @@ This is a Social Media application built with React, Tailwind & Sanity
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://share-me-rl.netlify.app/)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Shareme is a social media platform and visual discovery engine where users can discover and save ideas for various interests. It allows users to create and manage collections of visual bookmarks, known as "pins," that can include images, videos, and other media. These pins are organized on personalized boards, and users can explore content created by others.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -224,7 +224,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/rickyli1010/shareme/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ricky1010
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://i.ibb.co/8cLfj3X/image.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
