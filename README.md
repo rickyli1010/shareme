@@ -89,17 +89,30 @@ Shareme is a social media platform and visual discovery engine where users can d
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Tailwind][Tailwindcss.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CLONE OR DOWNLOAD -->
+## clone or download
+```terminal
+$ git clone https://github.com/rickyli1010/shareme.git
+$ yarn # or npm i
+```
+
+<!-- PROJECT STRUCTURE -->
+## project structure
+```terminal
+LICENSE
+package.json
+shareme_backend/
+   package.json
+shareme_frontend/
+   package.json
+   .env (to create .env, check [prepare your secret session])
+...
+```
 
 
 <!-- GETTING STARTED -->
@@ -109,33 +122,46 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- [Node](https://nodejs.org/en/download/) 
+- [npm](https://nodejs.org/en/download/package-manager/)
+- [Sanity](https://www.npmjs.com/package/sanity)
+- [TailwindCSS](https://www.npmjs.com/package/tailwindcss)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
-### Installation
+### Client-side usage(PORT: 3000)
+```terminal
+$ cd client          // go to client folder
+$ yarn # or npm i    // npm install packages
+$ npm run dev        // run it locally
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+// deployment for client app
+$ npm run build // this will compile the react code using webpack and generate a folder called docs in the root level
+$ npm run start // this will run the files in docs, this behavior is exactly the same how gh-pages will run your static site
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Server-side usage(PORT: 8000)
 
+### Prepare your secret
 
+run the script at the first level:
 
+(You need to add a JWT_SECRET in .env to connect to MongoDB)
+
+```terminal
+// in the root level
+$ cd server
+$ echo "JWT_SECRET=YOUR_JWT_SECRET" >> src/.env
+```
+
+### Start
+
+```terminal
+$ cd server   // go to server folder
+$ npm i       // npm install packages
+$ npm run dev // run it locally
+$ npm run build // this will build the server code to es5 js codes and generate a dist file
+```
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -241,3 +267,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[TailwindCSS.com]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/ 
