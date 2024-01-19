@@ -5,6 +5,7 @@ import { client } from '../client';
 import { feedQuery, searchQuery } from '../utils/data';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
+import { categories } from '../utils/data';
 
 const Feed = () => {
   const [loading, setLoading] = useState(false);
@@ -16,7 +17,11 @@ const Feed = () => {
     setLoading(true);
 
     if (categoryId) {
-      const query = searchQuery(categoryId);
+      const curCategory = categories.filter(
+        (category) => category.label === categoryId
+      )[0];
+
+      const query = searchQuery(curCategory.name);
 
       client.fetch(query).then((data) => {
         setPins(data);

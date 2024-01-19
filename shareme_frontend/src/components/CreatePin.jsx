@@ -183,7 +183,7 @@ const CreatePin = ({ user }) => {
                     value={category.name}
                     key={category.name}
                   >
-                    {category.name}
+                    {category.label}
                   </option>
                 ))}
               </select>
