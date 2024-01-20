@@ -54,8 +54,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#server-side-usage">Server-side usage</a></li>
-        <li><a href="#client-side-usage">Client-side usage</a></li>
+        <li><a href="#start">Start</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
