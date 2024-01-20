@@ -121,16 +121,31 @@ To get a local copy up and running follow these simple example steps.
 
 notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
+### Server-side usage(PORT: 3333)
+
+```terminal
+$ cd shareme_backend   // go to server folder
+$ npm i       // npm install packages
+$ sanity start // run it locally
+```
+
 ### Client-side usage(PORT: 3000)
 
 #### Prepare your secret
 
 run the script at the first level:
 
+Requires: 
+- Google API Token for Google Login
+- Sanity Project ID for connecting to Sanity
+- Sanity Token for Sanity Auth
+
 ```terminal
 // in the root level
 $ cd shareme_Frontend
-$ echo "JWT_SECRET=YOUR_JWT_SECRET" >> src/.env
+$ echo "REACT_APP_GOOGLE_API_TOKEN=YOUR_REACT_APP_GOOGLE_API_TOKEN" >> src/.env
+$ echo "REACT_APP_SANITY_PROJECT_ID=YOUR_REACT_APP_SANITY_PROJECT_ID" >> src/.env
+$ echo "REACT_APP_SANITY_TOKEN=YOUR_REACT_APP_SANITY_TOKEN" >> src/.env
 ```
 
 ### Start
@@ -143,17 +158,6 @@ $ npm run dev        // run it locally
 // deployment for client app
 $ npm run build // this will compile the react code using webpack and generate a folder called docs in the root level
 $ npm run start // this will run the files in docs, this behavior is exactly the same how gh-pages will run your static site
-```
-
-### Server-side usage(PORT: 8000)
-
-
-
-```terminal
-$ cd server   // go to server folder
-$ npm i       // npm install packages
-$ npm run dev // run it locally
-$ npm run build // this will build the server code to es5 js codes and generate a dist file
 ```
 <!-- USAGE EXAMPLES -->
 ## Usage
