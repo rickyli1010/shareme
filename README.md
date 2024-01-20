@@ -122,8 +122,21 @@ To get a local copy up and running follow these simple example steps.
 notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
 ### Client-side usage(PORT: 3000)
+
+#### Prepare your secret
+
+run the script at the first level:
+
 ```terminal
-$ cd client          // go to client folder
+// in the root level
+$ cd shareme_Frontend
+$ echo "JWT_SECRET=YOUR_JWT_SECRET" >> src/.env
+```
+
+### Start
+
+```terminal
+$ cd shareme_frontend          // go to client folder
 $ yarn # or npm i    // npm install packages
 $ npm run dev        // run it locally
 
@@ -134,19 +147,7 @@ $ npm run start // this will run the files in docs, this behavior is exactly the
 
 ### Server-side usage(PORT: 8000)
 
-### Prepare your secret
 
-run the script at the first level:
-
-(You need to add a JWT_SECRET in .env to connect to MongoDB)
-
-```terminal
-// in the root level
-$ cd server
-$ echo "JWT_SECRET=YOUR_JWT_SECRET" >> src/.env
-```
-
-### Start
 
 ```terminal
 $ cd server   // go to server folder
