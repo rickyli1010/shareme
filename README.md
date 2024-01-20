@@ -239,7 +239,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [issues-shield]: https://img.shields.io/github/issues/rickyli1010/shareme.svg?style=for-the-badge
 [issues-url]: https://github.com/rickyli1010/shareme/issues
 [license-shield]: https://img.shields.io/github/license/rickyli1010/shareme.svg?style=for-the-badge
-[license-url]: https://github.com/rickyli1010/shareme/blob/master/LICENSE.txt
+[license-url]: https://github.com/rickyli1010/shareme/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ricky1010
 [product-screenshot]: https://i.ibb.co/8cLfj3X/image.png
